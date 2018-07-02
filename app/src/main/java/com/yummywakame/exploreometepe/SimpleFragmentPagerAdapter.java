@@ -11,7 +11,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     final int PAGE_COUNT = 4;
-    private String tabTitles[] = new String[] { "Numbers", "Family", "Colors", "Phrases" };
+    private String tabTitles[] = new String[] { "Activities", "Restaurants", "Accommodation", "Featured" };
     private Context context;
 
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
@@ -22,13 +22,13 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new NumbersFragment();
+            return new ActivitiesFragment();
         } else if (position == 1){
-            return new FamilyFragment();
+            return new AccommodationFragment();
         } else if (position == 2) {
-            return new ColorsFragment();
+            return new RestaurantsFragment();
         } else {
-            return new PhrasesFragment();
+            return new FeaturedsFragment();
         }
     }
 

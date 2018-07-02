@@ -19,17 +19,17 @@
     <!-- White color -->
     <color name="color_white">#FFFFFF</color>
 
-    <!-- Background color for the numbers category -->
-    <color name="category_numbers">#FD8E09</color>
+    <!-- Background color for the activities category -->
+    <color name="category_activities">#FD8E09</color>
 
-    <!-- Background color for the family members category -->
-    <color name="category_family">#379237</color>
+    <!-- Background color for the restaurants category -->
+    <color name="category_restaurants">#8800A0</color>
 
-    <!-- Background color for the colors category -->
-    <color name="category_colors">#8800A0</color>
+    <!-- Background color for the accommodation category -->
+    <color name="category_accommodation">#379237</color>
 
-    <!-- Background color for the phrases category -->
-    <color name="category_phrases">#16AFCA</color>
+    <!-- Background color for the featured category -->
+    <color name="category_featured">#16AFCA</color>
 
     <!-- Tab text color deselected -->
     <color name="tab_default_color">#A8A19E</color>

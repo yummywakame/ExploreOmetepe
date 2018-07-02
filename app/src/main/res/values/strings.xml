@@ -14,19 +14,19 @@
 -->
 <resources>
     <!-- Title for the application. [CHAR LIMIT=12] -->
-    <string name="app_name">Miwok</string>
+    <string name="app_name">Explore Ometepe</string>
 
-    <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="category_phrases">Phrases</string>
+    <!-- Category name for activities [CHAR LIMIT=20] -->
+    <string name="category_activities">Activities</string>
 
-    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">Colors</string>
+    <!-- Category name for restaurants [CHAR LIMIT=20] -->
+    <string name="category_restaurants">Restaurants</string>
 
-    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">Numbers</string>
+    <!-- Category name for accommodation [CHAR LIMIT=20] -->
+    <string name="category_accommodation">Accommodation</string>
 
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Family Members</string>
+    <!-- Category name for featured [CHAR LIMIT=20] -->
+    <string name="category_featureds">Featured</string>
 
     <!-- Vocabulary word for the color red [CHAR LIMIT=20] -->
     <string name="color_red">red</string>
