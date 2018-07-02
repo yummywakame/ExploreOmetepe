@@ -5,7 +5,6 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-
 /**
  * Displays a {@link ViewPager} where each page shows a different day of the week.
  */
@@ -30,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        // Give the tab an icon
+        for (int i = 0; i < tabLayout.getTabCount(); i++) {
+            tabLayout.getTabAt(0).setIcon(R.drawable.tab_icon_activities);
+            tabLayout.getTabAt(1).setIcon(R.drawable.tab_icon_restaurants);
+            tabLayout.getTabAt(2).setIcon(R.drawable.tab_icon_accommodation);
+            tabLayout.getTabAt(3).setIcon(R.drawable.tab_icon_featured);
+        }
 
         // Find the toolbar
         Toolbar mToolbar = findViewById(R.id.main_toolbar);
