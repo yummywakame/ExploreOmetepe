@@ -9,9 +9,10 @@
     android:minHeight="@dimen/list_item_height">
 
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/venue_photo"
         android:layout_width="@dimen/list_item_height"
-        android:layout_height="@dimen/list_item_height" />
+        android:layout_height="@dimen/list_item_height"
+        android:scaleType="centerCrop" />
 
     <RelativeLayout
         android:id="@+id/text_container"
@@ -20,12 +21,12 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@id/image"
+        android:layout_toRightOf="@id/venue_photo"
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
         <TextView
-            android:id="@+id/miwok_text_view"
+            android:id="@+id/venue_title"
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:layout_weight="1"
@@ -36,22 +37,15 @@
             tools:text="lutti" />
 
         <TextView
-            android:id="@+id/default_text_view"
+            android:id="@+id/venue_town"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:layout_below="@id/miwok_text_view"
+            android:layout_below="@id/venue_title"
             android:layout_weight="1"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
             tools:text="one" />
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/ic_play_arrow" />
     </RelativeLayout>
 </RelativeLayout>

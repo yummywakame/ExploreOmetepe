@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources>
     <!-- Primary dark color of the app (shown in the status bar) -->
     <color name="primary_dark_color">#007aab</color>
@@ -20,13 +19,13 @@
     <color name="color_white">#FFFFFF</color>
 
     <!-- Background color for the activities category -->
-    <color name="category_activities">#FD8E09</color>
+    <color name="category_activities">#16AFCA</color>
 
     <!-- Background color for the restaurants category -->
-    <color name="category_restaurants">#8800A0</color>
+    <color name="category_restaurants">#16AFCA</color>
 
     <!-- Background color for the accommodation category -->
-    <color name="category_accommodation">#379237</color>
+    <color name="category_accommodation">#16AFCA</color>
 
     <!-- Background color for the featured category -->
     <color name="category_featured">#16AFCA</color>

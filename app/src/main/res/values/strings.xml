@@ -14,34 +14,34 @@
     <!-- Category name for featured [CHAR LIMIT=20] -->
     <string name="category_featureds">Featured</string>
 
-    <!-- Vocabulary word for the father family member [CHAR LIMIT=20] -->
+    <!-- Vocabulary venue for the father family member [CHAR LIMIT=20] -->
     <string name="family_father">father</string>
 
-    <!-- Vocabulary word for the mother family member [CHAR LIMIT=20] -->
+    <!-- Vocabulary venue for the mother family member [CHAR LIMIT=20] -->
     <string name="family_mother">mother</string>
 
-    <!-- Vocabulary word for the son family member [CHAR LIMIT=20] -->
+    <!-- Vocabulary venue for the son family member [CHAR LIMIT=20] -->
     <string name="family_son">son</string>
 
-    <!-- Vocabulary word for the daughter family member [CHAR LIMIT=20] -->
+    <!-- Vocabulary venue for the daughter family member [CHAR LIMIT=20] -->
     <string name="family_daughter">daughter</string>
 
-    <!-- Vocabulary word for the older brother family member [CHAR LIMIT=20] -->
+    <!-- Vocabulary venue for the older brother family member [CHAR LIMIT=20] -->
     <string name="family_older_brother">older brother</string>
 
-    <!-- Vocabulary word for the younger brother family member [CHAR LIMIT=20] -->
+    <!-- Vocabulary venue for the younger brother family member [CHAR LIMIT=20] -->
     <string name="family_younger_brother">younger brother</string>
 
-    <!-- Vocabulary word for the older sister family member [CHAR LIMIT=20] -->
+    <!-- Vocabulary venue for the older sister family member [CHAR LIMIT=20] -->
     <string name="family_older_sister">older sister</string>
 
-    <!-- Vocabulary word for the younger sister family member [CHAR LIMIT=20] -->
+    <!-- Vocabulary venue for the younger sister family member [CHAR LIMIT=20] -->
     <string name="family_younger_sister">younger sister</string>
 
-    <!-- Vocabulary word for the grandmother family member [CHAR LIMIT=20] -->
+    <!-- Vocabulary venue for the grandmother family member [CHAR LIMIT=20] -->
     <string name="family_grandmother">grandmother</string>
 
-    <!-- Vocabulary word for the grandfather family member [CHAR LIMIT=20] -->
+    <!-- Vocabulary venue for the grandfather family member [CHAR LIMIT=20] -->
     <string name="family_grandfather">grandfather</string>
 
 </resources>
