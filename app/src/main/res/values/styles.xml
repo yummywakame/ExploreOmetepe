@@ -43,10 +43,12 @@
 
     <!-- Style for tabs -->
     <style name="AppTabLayout" parent="Widget.Design.TabLayout">
-        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabIndicatorColor">@color/accent_color</item>
+        <item name="tabIndicatorHeight">5dp</item>
         <item name="tabBackground">@color/primary_color</item>
         <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
         <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabMode">scrollable</item>
     </style>
 
     <!-- Style for tab text -->
