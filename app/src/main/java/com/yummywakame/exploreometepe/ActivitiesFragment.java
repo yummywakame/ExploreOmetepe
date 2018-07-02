@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 /**
- * {@link Fragment} that displays a list of number vocabulary words.
+ * {@link Fragment} that displays a list of Activity venues.
  */
 public class ActivitiesFragment extends Fragment {
 
@@ -31,20 +31,20 @@ public class ActivitiesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View rootView = inflater.inflate(R.layout.word_list, container, false);
+        View rootView = inflater.inflate(R.layout.venue_list, container, false);
 
         //Create your ArrayList data
-        VenuesDatabase.add(new Venue("Matthew", "News App Pt. 1",
+        VenuesDatabase.add(new Venue("Activity 1", "text",
                 R.drawable.activities_concepcion_volcano));
-        VenuesDatabase.add(new Venue("Olivia", "Tour Guide",
+        VenuesDatabase.add(new Venue("Activity 2", "text",
                 R.drawable.activities_maderas_volcano));
-        VenuesDatabase.add(new Venue("Chris", "News App Pt. 1",
+        VenuesDatabase.add(new Venue("Activity 3", "text",
                 R.drawable.activities_ojo_de_agua));
 
         //Create a standard LinearLayout Manager to control how the recycler works
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         //Create an adapter based on the custom class you created
-        VenueAdapter venueAdapter = new VenueAdapter(getActivity(),VenuesDatabase);
+        VenueAdapter venueAdapter = new VenueAdapter(getContext(),VenuesDatabase);
 
         //Find your Recycler and set your layoutManger and adapter to it
         recyclerView = rootView.findViewById(R.id.recycler_view);

@@ -1,34 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Miwok translation for father -->
-    <string name="miwok_family_father">әpә</string>
-
-    <!-- Miwok translation for mother -->
-    <string name="miwok_family_mother">әṭa</string>
-
-    <!-- Miwok translation for son -->
-    <string name="miwok_family_son">angsi</string>
-
-    <!-- Miwok translation for daughter -->
-    <string name="miwok_family_daughter">tune</string>
-
-    <!-- Miwok translation for older brother -->
-    <string name="miwok_family_older_brother">taachi</string>
-
-    <!-- Miwok translation for younger brother -->
-    <string name="miwok_family_younger_brother">chalitti</string>
-
-    <!-- Miwok translation for older sister -->
-    <string name="miwok_family_older_sister">teṭe</string>
-
-    <!-- Miwok translation for younger sister -->
-    <string name="miwok_family_younger_sister">kolliti</string>
-
-    <!-- Miwok translation for grandmother -->
-    <string name="miwok_family_grandmother">ama</string>
-
-    <!-- Miwok translation for grandfather -->
-    <string name="miwok_family_grandfather">paapa</string>
-
+    <string name="string_name">text</string>
 </resources>
