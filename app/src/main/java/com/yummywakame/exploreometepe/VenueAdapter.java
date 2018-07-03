@@ -27,6 +27,8 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
     public VenueHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = layoutInflater.inflate(R.layout.list_item, parent, false);
         return new VenueHolder(view);
+
+
     }
 
     //Binds your Array data to the particular layout views
@@ -66,5 +68,9 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
             venueTown = venueView.findViewById(R.id.venue_town);
             venuePhotoId = venueView.findViewById(R.id.venue_photo);
         }
+
+
     }
+
+
 }
