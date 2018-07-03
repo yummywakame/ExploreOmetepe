@@ -1,35 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Layout for the main screen -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/menubar"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context="MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/toolbar_background" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/main_toolbar"
         android:layout_width="match_parent"
-        android:background="@color/primary_color"
+        android:background="@null"
         android:layout_height="?android:attr/actionBarSize"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_above="@id/sliding_tabs">
     </android.support.v7.widget.Toolbar>
 
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"
         android:layout_height="wrap_content"
-        android:background="@color/primary_color"
-        android:layout_width="match_parent"
+        style="@style/AppTabLayout"
+        android:background="@null"
         app:tabTextAppearance="@style/AppTabTextAppearance"
+        android:layout_width="match_parent"
         app:tabMode="fixed"
-        style="@style/AppTabLayout"/>
+        android:layout_above="@id/viewpager"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/pale_background"/>
+        android:layout_below="@id/imageView" />
 
-</LinearLayout>
+</RelativeLayout>
