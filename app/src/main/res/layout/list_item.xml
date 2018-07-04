@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     style="@style/CardView.Light"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    tools:ignore="ContentDescription"
-    card_view:cardCornerRadius="5dp"
-    card_view:cardElevation="5dp">
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    tools:ignore="ContentDescription">
 
     <android.support.constraint.ConstraintLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -24,48 +20,106 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:scaleType="centerCrop"
+            app:srcCompat="@android:color/darker_gray"
             app:layout_constraintDimensionRatio="H,16:9"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:color/darker_gray" />
-
-        <ImageView
-            android:id="@+id/view"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@drawable/gradient_venue_background"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/venue_title"
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
             android:id="@+id/venue_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/primary"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textColor="@color/colorPrimaryTextDefaultMaterialDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:fontFamily="@font/roboto_slab"
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            app:layout_constraintTop_toBottomOf="@+id/venue_photo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/venue_town"/>
+            app:layout_constraintBottom_toTopOf="@+id/venue_town" />
 
         <TextView
             android:id="@+id/venue_town"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:text="@string/subtext"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/colorSecondaryTextDefaultMaterialDark"
-            app:layout_constraintBottom_toBottomOf="@+id/view"
+            android:textColor="@color/colorSecondaryTextDefaultMaterialLight"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintTop_toBottomOf="@+id/venue_title"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/action_button_1" />
+
+        <Button
+            android:id="@+id/action_button_1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_slab"
+            android:minWidth="0dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:text="@string/action_1"
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            app:layout_constraintBottom_toTopOf="@+id/supporting_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/venue_town" />
+
+        <Button
+            android:id="@+id/action_button_2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto_slab"
+            android:minWidth="0dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:text="@string/action_2"
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            app:layout_constraintStart_toEndOf="@+id/action_button_1"
+            app:layout_constraintTop_toTopOf="@+id/action_button_1" />
+
+        <ImageButton
+            android:id="@+id/expand_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            android:background="#00FFFFFF"
+            android:padding="6dp"
+            app:srcCompat="@drawable/ic_expand_more_black_36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/action_button_1" />
+
+        <TextView
+            android:id="@+id/supporting_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/expanded_supporting"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/action_button_1" />
 
     </android.support.constraint.ConstraintLayout>
 

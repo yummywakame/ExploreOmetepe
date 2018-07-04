@@ -1,6 +1,5 @@
 package com.yummywakame.exploreometepe;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the view pager that will allow the user to swipe between fragments
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        ViewPager viewPager = findViewById(R.id.viewpager);
 
         // Create an adapter that knows which fragment should be shown on each page
         SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         // Give the TabLayout the ViewPager
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        TabLayout tabLayout = findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
         // Give the tab an icon
@@ -43,8 +42,10 @@ public class MainActivity extends AppCompatActivity {
         Toolbar mToolbar = findViewById(R.id.main_toolbar);
         // Add backwards compatibility to the toolbar
         setSupportActionBar(mToolbar);
+        // Remove default title which is overridden in XML
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         // Change title text and color
-        mToolbar.setTitle(R.string.app_name);
-        mToolbar.setTitleTextColor(getResources().getColor(R.color.color_white));
+        //mToolbar.setTitle(R.string.app_name);
+        //mToolbar.setTitleTextColor(getResources().getColor(R.color.color_white_semi_trans));
     }
 }

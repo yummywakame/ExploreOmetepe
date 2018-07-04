@@ -34,12 +34,14 @@ public class ActivitiesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.venue_list, container, false);
 
         //Create your ArrayList data
-        VenuesDatabase.add(new Venue("Activity 1", "text",
-                R.drawable.activities_concepcion_volcano));
-        VenuesDatabase.add(new Venue("Activity 2", "text",
-                R.drawable.activities_maderas_volcano));
-        VenuesDatabase.add(new Venue("Activity 3", "text",
-                R.drawable.activities_ojo_de_agua));
+        VenuesDatabase.add(new Venue(getString(R.string.venue_1_title), getString(R.string.venue_1_village),
+                R.drawable.venue_1));
+        VenuesDatabase.add(new Venue(getString(R.string.venue_0_title), getString(R.string.venue_0_village),
+                R.drawable.venue_0));
+        VenuesDatabase.add(new Venue(getString(R.string.venue_2_title), getString(R.string.venue_2_village),
+                R.drawable.venue_2));
+        VenuesDatabase.add(new Venue(getString(R.string.venue_3_title), getString(R.string.venue_3_village),
+                R.drawable.venue_3));
 
         //Create a standard LinearLayout Manager to control how the recycler works
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());

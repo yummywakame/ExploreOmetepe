@@ -18,11 +18,24 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/main_toolbar"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sliding_tabs"
+        android:layout_alignParentBottom="false"
         android:background="@null"
-        android:layout_height="?android:attr/actionBarSize"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
-        android:layout_above="@id/sliding_tabs">
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:includeFontPadding="false"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/app_title_color" />
+
     </android.support.v7.widget.Toolbar>
+
 
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"

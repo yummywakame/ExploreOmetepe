@@ -7,7 +7,9 @@
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="colorAccent">@color/accent_color</item>
-
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/app_background</item>
     </style>
 
     <!-- Style for a category of vocabulary venues -->
@@ -31,9 +33,9 @@
     <style name="AppTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@color/accent_color</item>
         <item name="tabIndicatorHeight">5dp</item>
-        <item name="tabBackground">@color/primary_color</item>
+        <item name="tabBackground">@color/light_color_semi_trans</item>
         <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
-        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@color/accent_color</item>
         <item name="tabMode">scrollable</item>
     </style>
 
@@ -42,4 +44,5 @@
         <item name="android:textColor">@color/tab_default_color</item>
         <item name="textAllCaps">true</item>
     </style>
+
 </resources>

@@ -6,19 +6,29 @@
     <!-- Primary color of the app (shown in the app bar) -->
     <color name="primary_color">#16AFCA</color>
 
-    <color name="background_color">#A8A19E</color>
+    <!-- App title color -->
+    <color name="app_title_color">#99ffffff</color>
 
     <!-- Light color -->
     <color name="light_color">#00cccc</color>
 
+    <!-- Semi-transparent Light color -->
+    <color name="light_color_semi_trans">#8000cccc</color>
+
     <!-- Accent colour for buttons -->
-    <color name="accent_color">#A4BC26</color>
+    <color name="accent_color">#ff0066</color>
+
+    <!-- Accent colour for buttons 2 -->
+    <color name="accent_color2">#A4BC26</color>
 
     <!-- Background color for app -->
-    <color name="pale_background">#FDF5DE</color>
+    <color name="app_background">#1a3b54</color>
 
     <!-- White color -->
     <color name="color_white">#FFFFFF</color>
+
+    <!-- Semi-transparent White color -->
+    <color name="color_white_semi_trans">#80FFFFFF</color>
 
     <!-- Background color for the activities category -->
     <color name="category_activities">#16AFCA</color>

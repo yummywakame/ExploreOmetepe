@@ -35,11 +35,11 @@ public class FeaturedsFragment extends Fragment {
 
         //Create your ArrayList data
         VenuesDatabase.add(new Venue("Featured 1", "text",
-                R.drawable.activities_concepcion_volcano));
+                R.drawable.venue_2));
         VenuesDatabase.add(new Venue("Featured 2", "text",
                 R.drawable.activities_maderas_volcano));
         VenuesDatabase.add(new Venue("Featured 3", "text",
-                R.drawable.activities_ojo_de_agua));
+                R.drawable.venue_0));
 
         //Create a standard LinearLayout Manager to control how the recycler works
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
