@@ -1,6 +1,7 @@
 package com.yummywakame.exploreometepe;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -40,12 +41,22 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
         holder.venueTitle.setText(currentVenue.getVenueTitle());
         holder.venueTown.setText(currentVenue.getVenueTown());
         holder.venuePhotoId.setImageResource(currentVenue.getVenuePhotoId());
+
+        //On Click Listener that goes to the chosen Venue's ActiviyDetail page
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "You've selected: " + currentVenue.getVenueTitle(), Toast.LENGTH_SHORT).show();
-                //This is where you can define how your item should respond when clicked.
-                //Intent, Toasts, etc, etc, etc...
+//                Toast.makeText(v.getContext(),
+//                        "You've selected: " + currentVenue.getVenueTitle(),
+//                        Toast.LENGTH_SHORT).show();
+
+                Intent venueDetailsIntent = new Intent(v.getContext(), DetailActivity.class);
+                // Add the song name and artist name to the intent sent to venueDetailsActivity
+
+                venueDetailsIntent.putExtra("VENUE_TITLE", currentVenue.getVenueTitle());
+                venueDetailsIntent.putExtra("VENUE_TOWN", currentVenue.getVenueTown());
+                venueDetailsIntent.putExtra("VENUE_IMAGE", currentVenue.getVenuePhotoId());
+                v.getContext().startActivity(venueDetailsIntent);
             }
         });
     }

@@ -3,6 +3,7 @@ package com.yummywakame.exploreometepe;
 import android.content.Context;
 import android.content.res.Resources;
 import android.support.annotation.IdRes;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -21,8 +22,10 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
-        this.context = context;
+       this.context = context;
     }
+
+
 
     @Override
     public Fragment getItem(int position) {
