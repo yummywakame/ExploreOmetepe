@@ -39,10 +39,10 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
 
         //Assign the values of your ArrayList to the assigned holder views
         holder.venueTitle.setText(currentVenue.getVenueTitle());
-        holder.venueTown.setText(currentVenue.getVenueTown());
+        holder.venueVillage.setText(currentVenue.getVenueVillage());
         holder.venuePhotoId.setImageResource(currentVenue.getVenuePhotoId());
 
-        //On Click Listener that goes to the chosen Venue's ActiviyDetail page
+        //On Click Listener that goes to the chosen Venue's ActivityDetail page
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,11 +51,11 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
 //                        Toast.LENGTH_SHORT).show();
 
                 Intent venueDetailsIntent = new Intent(v.getContext(), DetailActivity.class);
-                // Add the song name and artist name to the intent sent to venueDetailsActivity
 
-                venueDetailsIntent.putExtra("VENUE_TITLE", currentVenue.getVenueTitle());
-                venueDetailsIntent.putExtra("VENUE_TOWN", currentVenue.getVenueTown());
-                venueDetailsIntent.putExtra("VENUE_IMAGE", currentVenue.getVenuePhotoId());
+                // Add the venue details variables to be sent to venueDetailsActivity
+//                venueDetailsIntent.putExtra("VENUE_TITLE", currentVenue.getVenueTitle());
+//                venueDetailsIntent.putExtra("VENUE_VILLAGE", currentVenue.getVenueVillage());
+//                venueDetailsIntent.putExtra("VENUE_IMAGE", currentVenue.getVenuePhotoId());
                 v.getContext().startActivity(venueDetailsIntent);
             }
         });
@@ -70,13 +70,13 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
     //This is a custom holder which is how your data binding occurs, this is where the ids are assigned.
     class VenueHolder extends RecyclerView.ViewHolder {
         private TextView venueTitle;
-        private TextView venueTown;
+        private TextView venueVillage;
         private ImageView venuePhotoId;
 
         private VenueHolder(View venueView) {
             super(venueView);
             venueTitle = venueView.findViewById(R.id.venue_title);
-            venueTown = venueView.findViewById(R.id.venue_town);
+            venueVillage = venueView.findViewById(R.id.venue_village);
             venuePhotoId = venueView.findViewById(R.id.venue_photo);
         }
 

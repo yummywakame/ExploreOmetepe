@@ -3,12 +3,12 @@ package com.yummywakame.exploreometepe;
 public class Venue {
 
     private String VenueTitle;
-    private String VenueTown;
+    private String VenueVillage;
     private int VenuePhotoId;
 
-    public Venue(String VenueTitle, String VenueTown, int VenuePhotoId) {
+    public Venue(String VenueTitle, String VenueVillage, int VenuePhotoId) {
         this.VenueTitle = VenueTitle;
-        this.VenueTown = VenueTown;
+        this.VenueVillage = VenueVillage;
         this.VenuePhotoId = VenuePhotoId;
     }
 
@@ -16,8 +16,8 @@ public class Venue {
     public String getVenueTitle() {
         return VenueTitle;
     }
-    public String getVenueTown() {
-        return VenueTown;
+    public String getVenueVillage() {
+        return VenueVillage;
     }
     public int getVenuePhotoId() {
         return VenuePhotoId;
