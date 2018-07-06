@@ -10,9 +10,15 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
+    <!-- Transparent action bar -->
     <style name="TransparentBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="android:windowActionBarOverlay">true</item>
         <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <!-- No Action bar -->
+    <style name="AppTheme.NoActionBar">
+        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
     </style>
 
     <!-- App bar style -->
@@ -44,6 +50,16 @@
         <item name="android:paddingTop">24dp</item>
         <item name="android:paddingBottom">24dp</item>
         <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Venue detail icons -->
+    <style name="VenueIconText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorSecondaryTextDefaultMaterialLight</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/roboto_slab</item>
     </style>
 
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Primary dark color of the app (shown in the status bar) -->
-    <color name="primary_dark_color">#007aab</color>
+    <color name="primary_dark_color">#1a3b54</color>
 
     <!-- Primary color of the app (shown in the app bar) -->
     <color name="primary_color">#16AFCA</color>
@@ -44,10 +44,6 @@
 
     <!-- Tab text color deselected -->
     <color name="tab_default_color">#A8A19E</color>
-
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
 
     <color name="colorPrimaryTextDefaultMaterialLight">#DE000000</color>
     <color name="colorSecondaryTextDefaultMaterialLight">#8A000000</color>

@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -76,7 +75,7 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
         private VenueHolder(View venueView) {
             super(venueView);
             venueTitle = venueView.findViewById(R.id.venue_title);
-            venueVillage = venueView.findViewById(R.id.venue_village);
+            venueVillage = venueView.findViewById(R.id.venue_volcano);
             venuePhotoId = venueView.findViewById(R.id.venue_photo);
         }
 
