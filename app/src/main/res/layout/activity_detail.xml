@@ -32,12 +32,9 @@
                 android:background="@drawable/venue_0"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
-                app:layout_collapseMode="parallax" />
+                app:layout_collapseMode="parallax"
+                android:foreground="@drawable/gradient_venue_background"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/gradient_venue_background" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/main_toolbar"
@@ -52,7 +49,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_slab"
                     android:includeFontPadding="false"
-                    android:text="@string/venue_1_title"
+                    android:text="@string/venue_0_title"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@color/color_white" />
             </android.support.v7.widget.Toolbar>
@@ -89,7 +86,7 @@
                     android:paddingEnd="@dimen/card_margin"
                     android:paddingStart="@dimen/card_margin"
                     android:paddingTop="@dimen/card_margin"
-                    android:text="Altagracia, Charco Verde Area, Moyogalpa, Santo Domingo"
+                    android:text="@string/venue_0_village"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/colorPrimaryTextDefaultMaterialDark"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -106,7 +103,7 @@
                     android:paddingEnd="@dimen/card_margin"
                     android:paddingStart="@dimen/card_margin"
                     android:paddingTop="@dimen/card_margin"
-                    android:text="Volcano: Concepción"
+                    android:text="@string/venue_0_volcano"
                     android:textAlignment="textEnd"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/colorSecondaryTextDefaultMaterialDark"
@@ -123,7 +120,7 @@
                     android:layout_marginStart="16dp"
                     android:drawablePadding="8dp"
                     android:paddingTop="24dp"
-                    android:text="Our restaurant offers freshly made and nutritionally balanced meals using organic and locally sourced produce. Our portions are generous, and motto is quality and taste! We also have a great wine list to compliment your meal."
+                    android:text="@string/venue_0_intro"
                     app:layout_constraintEnd_toEndOf="@+id/venue_volcano"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/venue_volcano"
@@ -138,7 +135,7 @@
                     android:focusable="true"
                     android:gravity="center_vertical"
                     android:paddingTop="@dimen/card_margin"
-                    android:text="http://www.website.com"
+                    android:text="@string/venue_0_website_url"
                     app:layout_constraintEnd_toEndOf="@+id/venue_intro"
                     app:layout_constraintStart_toStartOf="@+id/venue_intro"
                     app:layout_constraintTop_toBottomOf="@+id/venue_intro" />
@@ -154,7 +151,7 @@
                     android:drawableStart="@drawable/icon_phone"
                     android:focusable="true"
                     android:gravity="center_vertical"
-                    android:text="+505-8369-0644"
+                    android:text="@string/venue_0_phone_number"
                     app:layout_constraintEnd_toEndOf="@+id/venue_volcano"
                     app:layout_constraintStart_toStartOf="@+id/venue_volcano"
                     app:layout_constraintTop_toBottomOf="@+id/venue_website" />
@@ -168,7 +165,7 @@
                     android:drawablePadding="8dp"
                     android:drawableStart="@drawable/icon_hours"
                     android:gravity="center_vertical"
-                    android:text="Mon – Sun: 8AM – 6PM"
+                    android:text="@string/venue_0_hours"
                     android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="@+id/venue_volcano"
                     app:layout_constraintStart_toStartOf="@+id/venue_volcano"
@@ -183,7 +180,7 @@
                     android:drawablePadding="8dp"
                     android:drawableStart="@drawable/icon_fee"
                     android:gravity="center_vertical"
-                    android:text="#2 USD"
+                    android:text="@string/venue_0_price"
                     android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="@+id/venue_volcano"
                     app:layout_constraintStart_toStartOf="@+id/venue_volcano"
@@ -198,7 +195,7 @@
                     android:drawablePadding="8dp"
                     android:drawableStart="@drawable/icon_cuisine"
                     android:gravity="center_vertical"
-                    android:text="Italian, Pizza, Vegetarian Friendly"
+                    android:text="@string/venue_0_cuisine"
                     android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="@+id/venue_volcano"
                     app:layout_constraintStart_toStartOf="@+id/venue_volcano"
@@ -213,7 +210,7 @@
                     android:drawablePadding="8dp"
                     android:drawableStart="@drawable/icon_meals"
                     android:gravity="center_vertical"
-                    android:text="Dinner, Lunch, Late Night"
+                    android:text="@string/venue_0_meals"
                     android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="@+id/venue_volcano"
                     app:layout_constraintStart_toStartOf="@+id/venue_volcano"
@@ -229,7 +226,7 @@
                     android:drawablePadding="8dp"
                     android:drawableStart="@drawable/icon_features"
                     android:gravity="center_vertical"
-                    android:text="Delivery, Takeout, Outdoor Seating, Seating, Waitstaff, Serves Alcohol, Full Bar, Free Wi-Fi, Reservations"
+                    android:text="@string/venue_0_features_services"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/venue_volcano"
                     app:layout_constraintStart_toStartOf="@+id/venue_volcano"

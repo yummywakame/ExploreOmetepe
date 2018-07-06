@@ -34,12 +34,17 @@ public class FeaturedsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.venue_list, container, false);
 
         //Create your ArrayList data
-        VenuesDatabase.add(new Venue("Featured 1", "text",
-                R.drawable.venue_2));
-        VenuesDatabase.add(new Venue("Featured 2", "text",
-                R.drawable.activities_maderas_volcano));
-        VenuesDatabase.add(new Venue("Featured 3", "text",
+        VenuesDatabase.add(new Venue(getString(R.string.venue_1_title), getString(R.string.venue_1_village), getString(R.string.venue_1_volcano), getString(R.string.venue_1_website_url), getString(R.string.venue_1_phone_number), getString(R.string.venue_1_features_services),
+                R.drawable.venue_1));
+
+        VenuesDatabase.add(new Venue(getString(R.string.venue_0_title), getString(R.string.venue_0_village), getString(R.string.venue_0_volcano), getString(R.string.venue_0_website_url), getString(R.string.venue_0_phone_number), getString(R.string.venue_0_features_services),
                 R.drawable.venue_0));
+
+        VenuesDatabase.add(new Venue(getString(R.string.venue_2_title), getString(R.string.venue_2_village), getString(R.string.venue_2_volcano), getString(R.string.venue_2_website_url), getString(R.string.venue_2_phone_number), getString(R.string.venue_2_features_services),
+                R.drawable.venue_2));
+
+        VenuesDatabase.add(new Venue(getString(R.string.venue_3_title), getString(R.string.venue_3_village), getString(R.string.venue_3_volcano), getString(R.string.venue_3_website_url), getString(R.string.venue_3_phone_number), getString(R.string.venue_3_features_services),
+                R.drawable.venue_3));
 
         //Create a standard LinearLayout Manager to control how the recycler works
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
