@@ -10,10 +10,10 @@
     <color name="app_title_color">#99ffffff</color>
 
     <!-- Light color -->
-    <color name="light_color">#00cccc</color>
+    <color name="light_color">#16AFCA</color>
 
     <!-- Semi-transparent Light color -->
-    <color name="light_color_semi_trans">#8000cccc</color>
+    <color name="light_color_semi_trans">#8016AFCA</color>
 
     <!-- Accent colour for buttons -->
     <color name="accent_color">#ff0066</color>

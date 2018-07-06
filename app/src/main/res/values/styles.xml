@@ -4,23 +4,15 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/primary_color</item>
         <item name="colorPrimaryDark">@color/primary_dark_color</item>
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
         <item name="colorAccent">@color/accent_color</item>
+        <item name="android:windowBackground">@color/app_background</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowBackground">@color/app_background</item>
     </style>
 
-    <!-- Style for a category of vocabulary venues -->
-    <style name="CategoryStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/list_item_height</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:padding">16dp</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    <style name="TransparentBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
     </style>
 
     <!-- App bar style -->
@@ -43,6 +35,15 @@
     <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textColor">@color/tab_default_color</item>
         <item name="textAllCaps">true</item>
+    </style>
+
+    <!-- Venue detail card styles -->
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
     </style>
 
 </resources>

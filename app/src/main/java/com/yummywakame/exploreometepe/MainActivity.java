@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.viewpager);
 
         // Create an adapter that knows which fragment should be shown on each page
-        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
+        SimpleFragmentPagerAdapter adapter =
+                new SimpleFragmentPagerAdapter(getSupportFragmentManager());
 
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);
@@ -38,14 +39,5 @@ public class MainActivity extends AppCompatActivity {
             tabLayout.getTabAt(3).setIcon(R.drawable.tab_icon_featured);
         }
 
-        // Find the toolbar
-        Toolbar mToolbar = findViewById(R.id.main_toolbar);
-        // Add backwards compatibility to the toolbar
-        setSupportActionBar(mToolbar);
-        // Remove default title which is overridden in XML
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        // Change title text and color
-        //mToolbar.setTitle(R.string.app_name);
-        //mToolbar.setTitleTextColor(getResources().getColor(R.color.color_white_semi_trans));
     }
 }
