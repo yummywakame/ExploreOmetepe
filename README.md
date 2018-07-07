@@ -1,6 +1,10 @@
 ## Grow With Google Android Basics Nanodegree: PROJECT 5
 # Explore Ometepe - Tourism App
 
+## Note for Reviewer
+In case of any import issues I have a backup of the project zipped here: 
+https://www.dropbox.com/s/zj21xq4p8gqjotn/ExploreOmetepe.zip?dl=0
+
 ## Resources
  - [Lift on Touch animation for CardViews](https://stackoverflow.com/questions/44393762/cardview-lift-on-touch)
  - [Using of ConstraintLayout to build out CardView with Material Design](http://eugenebrusov.com/cardview-with-constraintlayout/
