@@ -38,12 +38,13 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
 
         //Assign the values of your ArrayList to the assigned holder views
         holder.venueTitle.setText(currentVenue.getVenueTitle());
-        holder.venueVillage.setText(currentVenue.getVenueVillage());
+//        holder.venueVillage.setText(currentVenue.getVenueVillage());
         holder.venueVolcano.setText(currentVenue.getVenueVolcano());
-        holder.venueWebsite.setText(currentVenue.getVenueWebsite());
-        holder.venuePhone.setText(currentVenue.getVenuePhone());
-        holder.venueFeatures.setText(currentVenue.getVenueFeatures());
+//        holder.venueWebsite.setText(currentVenue.getVenueWebsite());
+//        holder.venuePhone.setText(currentVenue.getVenuePhone());
+//        holder.venueFeatures.setText(currentVenue.getVenueFeatures());
         holder.venuePhotoId.setImageResource(currentVenue.getVenuePhotoId());
+//        holder.venueMapUrl.setText(currentVenue.getVenueMapUrl());
 
         //On Click Listener that goes to the chosen Venue's ActivityDetail page
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +60,7 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
                 venueDetailsIntent.putExtra("VENUE_PHONE", currentVenue.getVenuePhone());
                 venueDetailsIntent.putExtra("VENUE_FEATURES", currentVenue.getVenueFeatures());
                 venueDetailsIntent.putExtra("VENUE_IMAGE", currentVenue.getVenuePhotoId());
+                venueDetailsIntent.putExtra("VENUE_MAP_URL", currentVenue.getVenueMapUrl());
                 v.getContext().startActivity(venueDetailsIntent);
             }
         });
@@ -73,22 +75,24 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
     //This is a custom holder which is how your data binding occurs, this is where the ids are assigned.
     class VenueHolder extends RecyclerView.ViewHolder {
         private TextView venueTitle;
-        private TextView venueVillage;
+//        private TextView venueVillage;
         private TextView venueVolcano;
-        private TextView venueWebsite;
-        private TextView venuePhone;
-        private TextView venueFeatures;
+//        private TextView venueWebsite;
+//        private TextView venuePhone;
+//        private TextView venueFeatures;
         private ImageView venuePhotoId;
+//        private TextView venueMapUrl;
 
         private VenueHolder(View venueView) {
             super(venueView);
             venueTitle = venueView.findViewById(R.id.venue_title);
-            venueVillage = venueView.findViewById(R.id.venue_village);
+//            venueVillage = venueView.findViewById(R.id.venue_village);
             venueVolcano = venueView.findViewById(R.id.venue_volcano);
-            venueWebsite = venueView.findViewById(R.id.venue_website);
-            venuePhone = venueView.findViewById(R.id.venue_phone);
-            venueFeatures = venueView.findViewById(R.id.venue_features);
+//            venueWebsite = venueView.findViewById(R.id.venue_website);
+//            venuePhone = venueView.findViewById(R.id.venue_phone);
+//            venueFeatures = venueView.findViewById(R.id.venue_features);
             venuePhotoId = venueView.findViewById(R.id.venue_photo);
+//            venueMapURL = venueView.findViewById(R.id.venue_map);
         }
 
 

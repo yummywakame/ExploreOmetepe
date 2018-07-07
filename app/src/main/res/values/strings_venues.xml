@@ -9,21 +9,21 @@
     <string name="venue_0_description">The Ojo de Agua is a natural spring pool filled with crystal clear water from an underground river that comes from volcano Maderas. The swimming hole is rimmed with cement to form two separate swimming areas where the water gets renewed constantly by the spring that emerges from the bottom of the upper pool.\n\nEssentials | Located on the road between the two volcanoes, roughly 2 km after Santo Domingo. From the entrance where you have to pay $2 US per person, there is around 1km walk to get to the pools. There are lockers on site for your valuables and basic changing facilities.</string>
     <string name="venue_0_getting_there">From Altagracia it\'s around 5 km to the Ojo de Agua. Take the road to Playa Santa Domingo and watch out for a sign indicating "The Eye of the Water". If you are on a bus tell the driver to drop you there. From the turnoff it is a 500 m walk to the parking lot.\n\nFrom Playa Santo Domingo go 2 km on the road to Altagracia until you reach the other entrance to the Ojo de Agua. After paying the admission fee you continue for 500 m through the farmland until the pools. With a car take the other entrance, one km further, as described above.</string>
     <string name="venue_0_photo_url">http://mapio.net/pic/p-22794806/</string>
-    <string name="venue_0_hours">$3 (USD)</string>
-    <string name="venue_0_admission">https://ometepenicaragua.com/ojodeagua/</string>
-    <string name="venue_0_website_url">https://goo.gl/maps/YNY5Ke5Ci6S2</string>
+    <string name="venue_0_hours">-</string>
+    <string name="venue_0_admission">$3 (USD)</string>
+    <string name="venue_0_website_url">https://ometepenicaragua.com/ojodeagua/</string>
     <string name="venue_0_map_url">Lockers, Basic changing facilities</string>
     <string name="venue_0_360_url">https://goo.gl/maps/YNY5Ke5Ci6S2</string>
-    <string name="venue_0_bookings">temp_string</string>
+    <string name="venue_0_bookings">-</string>
     <string name="venue_0_features_services">Lockers, Basic changing facilities</string>
-    <string name="venue_0_phone_number">temp_string</string>
-    <string name="venue_0_price">temp_string</string>
-    <string name="venue_0_cuisine">temp_string</string>
-    <string name="venue_0_meals">temp_string</string>
+    <string name="venue_0_phone_number">-</string>
+    <string name="venue_0_price">-</string>
+    <string name="venue_0_cuisine">-</string>
+    <string name="venue_0_meals">-</string>
 
     <!-- Punta Jesus Maria -->
     <string name="venue_1_title">Watch the Sunset at Punta Jesus Maria</string>
-    <string name="venue_1_featured">temp_string</string>
+    <string name="venue_1_featured">-</string>
     <string name="venue_1_village">Moyogalpa</string>
     <string name="venue_1_volcano">Concepción</string>
     <string name="venue_1_category">Activities</string>
@@ -31,21 +31,21 @@
     <string name="venue_1_description">Punta Jesús María is the most western point of Ometepe. A narrow strip of sand stretches out into Lake Nicaragua, which can reach as far as 1 kilometre into the lake during dry season. You can walk on this strip of sand, with water splashing in from both the left and the right. During the raining season, however, the water level of the lake rises and this strip of sand can totally disappear.\n\nThis point is famous for its spectacular sunsets. When the sun sets late in the afternoon, the sky turns orange and you can enjoy this spectacle from the small restaurant that is located at Punta Jesús María called Restaurante Linda Vista. You can also see the mainland on the other side of the lake, including the Mombacho Volcano close to Granada.\n\nIn addition to all this, you can also observe another interesting phenomenon during the raining season at Punta Jesús María: the waves come from both the left and the right, and they sort of crash into each other right at the middle of the point. It is similar to what you can see if two seas meet, but then on a small scale. Swimming can also be done at Punta Jesús María. Another option is to camp at the beach at this unique point. Just bring your tent and arrange the details with the restaurant.</string>
     <string name="venue_1_getting_there">The point is easily reachable from the main road. About 4 kilometres from Moyogalpa (on the way to Altagracia) you will see a big sign that tells you where to head for the beach. From the main road, it is about 1.5 kilometres to Punta Jesús María. This road is unpaved, but you can easily get there biking, hiking, or driving a car.</string>
     <string name="venue_1_photo_url">https://www.flickr.com/photos/dim7chord/</string>
-    <string name="venue_1_hours">temp_string</string>
+    <string name="venue_1_hours">-</string>
     <string name="venue_1_admission">$0 - $1 (USD)</string>
     <string name="venue_1_website_url">https://vianica.com/attraction/59/punta-jesus-maria</string>
     <string name="venue_1_map_url">https://goo.gl/maps/5TyLwfHo8K72</string>
     <string name="venue_1_360_url">https://goo.gl/maps/hWEmatwSxpn</string>
-    <string name="venue_1_bookings">temp_string</string>
+    <string name="venue_1_bookings">-</string>
     <string name="venue_1_features_services">Restaurant</string>
-    <string name="venue_1_phone_number">temp_string</string>
-    <string name="venue_1_price">temp_string</string>
-    <string name="venue_1_cuisine">temp_string</string>
-    <string name="venue_1_meals">temp_string</string>
+    <string name="venue_1_phone_number">-</string>
+    <string name="venue_1_price">-</string>
+    <string name="venue_1_cuisine">-</string>
+    <string name="venue_1_meals">-</string>
 
     <!-- Concepción Volcano -->
     <string name="venue_2_title">Hike Concepción Volcano</string>
-    <string name="venue_2_featured">temp_string</string>
+    <string name="venue_2_featured">-</string>
     <string name="venue_2_village">Balgüe / Santa Cruz / La Palma, Merida / San Ramon</string>
     <string name="venue_2_volcano">Concepción</string>
     <string name="venue_2_category">Activities</string>
@@ -53,21 +53,21 @@
     <string name="venue_2_description">The Concepción is a near perfect cone-shaped volcano. It is the biggest on Ometepe, with a height of 1,610 meters. The volcano is still active. Smoke is coming out of its crater, and there are other fumaroles on the volcano’s slope as well.\n\nYou’ll need a lot of energy, stamina, and you should be in good condition to climb the Concepción. It is one of the toughest climbs in Nicaragua. The slopes are very steep and the volcano is one of the highest in Nicaragua. The bottom part of the volcano is covered in trees. You will first walk through plantain and banana plantations. Halfway, there is a dense, humid forest. Vegetation becomes less dense and less tall more to the top.\n\nNo not envision yourself sunbathing at the top of this mighty volcano. The crater is often covered in clouds and the weather conditions at the top are not very inviting. Your clothes will be soaked at this point, due to sweating and humidity, and a very strong, chilly wind that blows continuously will force you to descent as soon as possible.\n\nNevertheless, your efforts and the hardship you must endure will be rewarded. At the first place ascending such a giant volcano is quite an achievement. In addition, standing at the rim of the crater of this volcano is a truly unique experience. The cold wind chilling your body will be countered by the hot smoke that is emitted by the crater. You will feel the heat of the volcano as well as the coldness of the wind. Odd plants growing around the crater only add to the unique atmosphere.\n\nIf you are very lucky to be at the top when there are no clouds, you will have a magnificent view of Ometepe, Lake Nicaragua, and the main land. Nevertheless, the views when descending are quite spectacular as well.\n\nAscending and descending the Concepción will take between seven and ten hours. You should therefore bring enough water and food and prepare well. A dry shirt or jacket can help too. Leave early (preferable at sunrise) so you return on time.</string>
     <string name="venue_2_getting_there">You must hire a guide, which can be arranged by your hotel. Tourists have died attempting the hike without a guide. </string>
     <string name="venue_2_photo_url">https://www.flickr.com/photos/ashokbo/13136704615</string>
-    <string name="venue_2_hours">temp_string</string>
+    <string name="venue_2_hours">-</string>
     <string name="venue_2_admission">Approx. $50 (USD) guided hike</string>
     <string name="venue_2_website_url">https://vianica.com/attraction/16/concepcion-volcano</string>
     <string name="venue_2_map_url">https://goo.gl/maps/BTByqEZQFUo</string>
     <string name="venue_2_360_url">https://goo.gl/maps/d9PpfNXrmK32</string>
-    <string name="venue_2_bookings">temp_string</string>
-    <string name="venue_2_features_services">temp_string</string>
-    <string name="venue_2_phone_number">temp_string</string>
+    <string name="venue_2_bookings">-</string>
+    <string name="venue_2_features_services">-</string>
+    <string name="venue_2_phone_number">-</string>
     <string name="venue_2_price">$-$$$</string>
-    <string name="venue_2_cuisine">temp_string</string>
-    <string name="venue_2_meals">temp_string</string>
+    <string name="venue_2_cuisine">-</string>
+    <string name="venue_2_meals">-</string>
 
     <!-- San Ramon Waterfall -->
     <string name="venue_3_title">Hike to San Ramon Waterfall</string>
-    <string name="venue_3_featured">temp_string</string>
+    <string name="venue_3_featured">-</string>
     <string name="venue_3_village">Merida / San Ramon</string>
     <string name="venue_3_volcano">Maderas</string>
     <string name="venue_3_category">Activities</string>
@@ -80,16 +80,16 @@
     <string name="venue_3_website_url">https://vianica.com/attraction/98/san-ramon-waterfall</string>
     <string name="venue_3_map_url">https://goo.gl/maps/G2Y8U8Wt6cN2</string>
     <string name="venue_3_360_url">https://goo.gl/maps/2tQBgCtEQBE2</string>
-    <string name="venue_3_bookings">temp_string</string>
-    <string name="venue_3_features_services">temp_string</string>
-    <string name="venue_3_phone_number">temp_string</string>
-    <string name="venue_3_price">temp_string</string>
-    <string name="venue_3_cuisine">temp_string</string>
-    <string name="venue_3_meals">temp_string</string>
+    <string name="venue_3_bookings">-</string>
+    <string name="venue_3_features_services">-</string>
+    <string name="venue_3_phone_number">-</string>
+    <string name="venue_3_price">-</string>
+    <string name="venue_3_cuisine">-</string>
+    <string name="venue_3_meals">-</string>
 
     <!-- Petroglyphs -->
     <string name="venue_4_title">Check Out the Petroglyphs</string>
-    <string name="venue_4_featured">temp_string</string>
+    <string name="venue_4_featured">-</string>
     <string name="venue_4_village">Altagracia, Balgüe / Santa Cruz / La Palma, Charco Verde Area, Merida / San Ramon, Moyogalpa, Santo Domingo</string>
     <string name="venue_4_volcano">Concepción, Maderas</string>
     <string name="venue_4_category">Activities</string>
@@ -97,16 +97,16 @@
     <string name="venue_4_description">The early Indians considered the island of Ometepe as their promised land. The Maderas was the sacred place of the sun, while the Concepcion was the brother of the moon.\n\nArcheologists refer to Ometepe as the Island of circles and spirals due to the abstract curvilinear motifs carved on the basalt boulders.\n\nSome motifs are highly stylized and intricately carved. The most common motif is the spiral.\n\nOther motifs depict animals like lizards, crocodiles, turtles and frogs, or anthropomorphic and zoomorphic figures.\n\nCalendars were found on certain stones showing that the Indians knew 18 months, each with 20 days which made a year of 360 days. The oldest petroglyphs on Ometepe date back to around 1000 B.C.</string>
     <string name="venue_4_getting_there">Petroglyphs and ancient pottery adorn many private museums, houses and hotels on Ometepe.\n\nSome of the best places to see petroglyphs on their original location are at Hotel Finca Porvenir and on Finca Magdalena, both on the slopes of the volcano Maderas.\n\nMore petroglyphs can be found in San José de San Marcos, one of them depicting an eagle with opened wings. On the San Antonio farm, on a strip of land that juts into the Lake of Nicaragua, there are petroglyphs with circular, spiral, square and rectangular shapes. Others are found on the La Primavera farm, at the mouth of the Rio Buen Suceso. Near Cigüeña there is the Cross of the South on a medium size rock and nearby you find several images of animals. On the east coast of the Maderas cave paintings can be seen in Tichana, and more petroglyphs in Corazal.\n\nAmong the most important archeological sites are Tagüizapa and San Silvestre near Altagracia where four large stone idols have been found and many more may be buried in the ground.\n\nThe museum in Altagracia shows some nice sculptures and petroglyphs. Some more big statues are found on the grounds of the old parroquial church. Also in Altagracia, in the Siloé Evangelic temple, is a stone engraved with an ""X"" and cross shapes. This stone was used by the natives for human sacrifices\n\nMany stone idols and petroglyphs have been carried away from Ometepe and are now in places like the museum in Managua, the Palacio Nacional de Nicaragua and farther away, in private collections and museums all over the world.\n\nThe private, archeological museum of La Ceiba in the Charco Verde Area has a large collection of pre-Columbian artefacts and offers guided tours.</string>
     <string name="venue_4_photo_url">https://hiveminer.com/Tags/ometepe%2Cpetroglyph</string>
-    <string name="venue_4_hours">temp_string</string>
-    <string name="venue_4_admission">temp_string</string>
-    <string name="venue_4_website_url">temp_string</string>
-    <string name="venue_4_map_url">temp_string</string>
-    <string name="venue_4_360_url">temp_string</string>
-    <string name="venue_4_bookings">temp_string</string>
-    <string name="venue_4_features_services">temp_string</string>
-    <string name="venue_4_phone_number">temp_string</string>
-    <string name="venue_4_price">temp_string</string>
-    <string name="venue_4_cuisine">temp_string</string>
-    <string name="venue_4_meals">temp_string</string>
+    <string name="venue_4_hours">-</string>
+    <string name="venue_4_admission">-</string>
+    <string name="venue_4_website_url">-</string>
+    <string name="venue_4_map_url">-</string>
+    <string name="venue_4_360_url">-</string>
+    <string name="venue_4_bookings">-</string>
+    <string name="venue_4_features_services">-</string>
+    <string name="venue_4_phone_number">-</string>
+    <string name="venue_4_price">-</string>
+    <string name="venue_4_cuisine">-</string>
+    <string name="venue_4_meals">-</string>
 
 </resources>

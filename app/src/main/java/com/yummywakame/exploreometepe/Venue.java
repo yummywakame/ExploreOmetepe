@@ -8,7 +8,9 @@ public class Venue {
     private String VenueWebsite;
     private String VenuePhone;
     private String VenueFeatures;
+    private String VenueMapUrl;
     private int VenuePhotoId;
+
 
     public Venue(String VenueTitle,
                  String VenueVillage,
@@ -16,14 +18,17 @@ public class Venue {
                  String VenueWebsite,
                  String VenuePhone,
                  String VenueFeatures,
-                 int VenuePhotoId) {
+                 String VenueMapUrl,
+                 int VenuePhotoId){
         this.VenueTitle = VenueTitle;
         this.VenueVillage = VenueVillage;
         this.VenueVolcano = VenueVolcano;
         this.VenueWebsite = VenueWebsite;
         this.VenuePhone = VenuePhone;
         this.VenueFeatures = VenueFeatures;
+        this.VenueMapUrl = VenueMapUrl;
         this.VenuePhotoId = VenuePhotoId;
+
     }
 
     //These are your GETTERS to return the selected items
@@ -45,7 +50,11 @@ public class Venue {
     public String getVenueFeatures() {
         return VenueFeatures;
     }
+    public String getVenueMapUrl() {
+        return VenueMapUrl;
+    }
     public int getVenuePhotoId() {
         return VenuePhotoId;
     }
+
 }
