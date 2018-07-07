@@ -2,7 +2,9 @@ package com.yummywakame.exploreometepe;
 
 public class Venue {
 
+    // Venue items
     private String VenueTitle;
+    private String VenueIntro;
     private String VenueVillage;
     private String VenueVolcano;
     private String VenueWebsite;
@@ -13,6 +15,7 @@ public class Venue {
 
 
     public Venue(String VenueTitle,
+                 String VenueIntro,
                  String VenueVillage,
                  String VenueVolcano,
                  String VenueWebsite,
@@ -21,6 +24,7 @@ public class Venue {
                  String VenueMapUrl,
                  int VenuePhotoId){
         this.VenueTitle = VenueTitle;
+        this.VenueIntro = VenueIntro;
         this.VenueVillage = VenueVillage;
         this.VenueVolcano = VenueVolcano;
         this.VenueWebsite = VenueWebsite;
@@ -34,6 +38,9 @@ public class Venue {
     //These are your GETTERS to return the selected items
     public String getVenueTitle() {
         return VenueTitle;
+    }
+    public String getVenueIntro() {
+        return VenueIntro;
     }
     public String getVenueVillage() {
         return VenueVillage;

@@ -27,8 +27,6 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
     public VenueHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = layoutInflater.inflate(R.layout.list_item, parent, false);
         return new VenueHolder(view);
-
-
     }
 
     //Binds your Array data to the particular layout views
@@ -38,13 +36,8 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
 
         //Assign the values of your ArrayList to the assigned holder views
         holder.venueTitle.setText(currentVenue.getVenueTitle());
-//        holder.venueVillage.setText(currentVenue.getVenueVillage());
-        holder.venueVolcano.setText(currentVenue.getVenueVolcano());
-//        holder.venueWebsite.setText(currentVenue.getVenueWebsite());
-//        holder.venuePhone.setText(currentVenue.getVenuePhone());
-//        holder.venueFeatures.setText(currentVenue.getVenueFeatures());
+        holder.venueVillage.setText(currentVenue.getVenueVillage());
         holder.venuePhotoId.setImageResource(currentVenue.getVenuePhotoId());
-//        holder.venueMapUrl.setText(currentVenue.getVenueMapUrl());
 
         //On Click Listener that goes to the chosen Venue's ActivityDetail page
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +47,7 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
 
                 // Add the venue details variables to be sent to venueDetailsActivity
                 venueDetailsIntent.putExtra("VENUE_TITLE", currentVenue.getVenueTitle());
+                venueDetailsIntent.putExtra("VENUE_INTRO", currentVenue.getVenueIntro());
                 venueDetailsIntent.putExtra("VENUE_VILLAGE", currentVenue.getVenueVillage());
                 venueDetailsIntent.putExtra("VENUE_VOLCANO", currentVenue.getVenueVolcano());
                 venueDetailsIntent.putExtra("VENUE_WEBSITE", currentVenue.getVenueWebsite());
@@ -75,28 +69,16 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
     //This is a custom holder which is how your data binding occurs, this is where the ids are assigned.
     class VenueHolder extends RecyclerView.ViewHolder {
         private TextView venueTitle;
-//        private TextView venueVillage;
-        private TextView venueVolcano;
-//        private TextView venueWebsite;
-//        private TextView venuePhone;
-//        private TextView venueFeatures;
+        private TextView venueVillage;
         private ImageView venuePhotoId;
-//        private TextView venueMapUrl;
 
         private VenueHolder(View venueView) {
             super(venueView);
             venueTitle = venueView.findViewById(R.id.venue_title);
-//            venueVillage = venueView.findViewById(R.id.venue_village);
-            venueVolcano = venueView.findViewById(R.id.venue_volcano);
-//            venueWebsite = venueView.findViewById(R.id.venue_website);
-//            venuePhone = venueView.findViewById(R.id.venue_phone);
-//            venueFeatures = venueView.findViewById(R.id.venue_features);
+            venueVillage = venueView.findViewById(R.id.venue_village);
             venuePhotoId = venueView.findViewById(R.id.venue_photo);
-//            venueMapURL = venueView.findViewById(R.id.venue_map);
         }
 
-
     }
-
 
 }

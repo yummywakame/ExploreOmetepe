@@ -10,27 +10,10 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <!-- Transparent action bar -->
-    <style name="TransparentBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:windowActionBarOverlay">true</item>
-        <item name="windowActionBarOverlay">true</item>
-    </style>
-
-    <!-- No Action bar -->
-    <style name="AppTheme.NoActionBar">
-        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
-    </style>
-
-    <!-- App bar style -->
-    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <!-- remove shadow below action bar -->
-        <item name="elevation">0dp</item>
-    </style>
-
     <!-- Style for tabs -->
     <style name="AppTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@color/accent_color</item>
-        <item name="tabIndicatorHeight">5dp</item>
+        <item name="tabIndicatorHeight">@dimen/tab_indicator_height</item>
         <item name="tabBackground">@color/light_color_semi_trans</item>
         <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
         <item name="tabSelectedTextColor">@color/accent_color</item>
@@ -41,15 +24,6 @@
     <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textColor">@color/tab_default_color</item>
         <item name="textAllCaps">true</item>
-    </style>
-
-    <!-- Venue detail card styles -->
-    <style name="Widget.CardContent" parent="android:Widget">
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:paddingTop">24dp</item>
-        <item name="android:paddingBottom">24dp</item>
-        <item name="android:orientation">vertical</item>
     </style>
 
     <!-- Venue detail icons -->

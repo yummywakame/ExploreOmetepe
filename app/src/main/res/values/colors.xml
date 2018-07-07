@@ -3,6 +3,9 @@
     <!-- Primary dark color of the app (shown in the status bar) -->
     <color name="primary_dark_color">#1a3b54</color>
 
+    <!-- Ultra dark color -->
+    <color name="ultra_dark_color">#0d1c28</color>
+
     <!-- Primary color of the app (shown in the app bar) -->
     <color name="primary_color">#16AFCA</color>
 
@@ -29,18 +32,6 @@
 
     <!-- Semi-transparent White color -->
     <color name="color_white_semi_trans">#80FFFFFF</color>
-
-    <!-- Background color for the activities category -->
-    <color name="category_activities">#16AFCA</color>
-
-    <!-- Background color for the restaurants category -->
-    <color name="category_restaurants">#16AFCA</color>
-
-    <!-- Background color for the accommodation category -->
-    <color name="category_accommodation">#16AFCA</color>
-
-    <!-- Background color for the featured category -->
-    <color name="category_featured">#16AFCA</color>
 
     <!-- Tab text color deselected -->
     <color name="tab_default_color">#A8A19E</color>

@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 /**
- * Displays a {@link ViewPager} where each page shows a different day of the week.
+ * Displays a {@link ViewPager} where each page shows type of venue.
  */
 public class MainActivity extends AppCompatActivity {
 

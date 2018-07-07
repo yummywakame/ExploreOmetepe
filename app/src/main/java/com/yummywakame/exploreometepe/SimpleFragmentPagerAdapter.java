@@ -1,14 +1,9 @@
 package com.yummywakame.exploreometepe;
 
 import android.content.Context;
-import android.content.res.Resources;
-import android.support.annotation.IdRes;
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-import java.util.ResourceBundle;
 
 /**
  * Provides the appropriate {@link Fragment} for a view pager.
@@ -36,7 +31,7 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
         } else if (position == 2) {
             return new AccommodationFragment();
         } else {
-            return new FeaturedsFragment();
+            return new FeaturedFragment();
         }
     }
 

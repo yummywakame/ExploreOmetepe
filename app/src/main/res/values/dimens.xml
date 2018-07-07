@@ -1,9 +1,13 @@
 <resources>
     <!-- Height of each list item -->
     <dimen name="list_item_height">88dp</dimen>
+    <!-- Tabs -->
+    <dimen name="tab_indicator_height">5dp</dimen>
     <!-- Venue Detail items -->
     <dimen name="detail_backdrop_height">256dp</dimen>
     <dimen name="card_margin">16dp</dimen>
+    <dimen name="card_margin_deep">24dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="card_large_margin">40dp</dimen>
+    <dimen name="tiny_padding">8dp</dimen>
 </resources>

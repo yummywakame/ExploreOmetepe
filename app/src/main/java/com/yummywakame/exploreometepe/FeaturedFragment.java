@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 /**
- * {@link Fragment} that displays a list of Activity venues.
+ * {@link Fragment} that displays a list of Featured venues.
  */
-public class ActivitiesFragment extends Fragment {
+public class FeaturedFragment extends Fragment {
 
     public ArrayList<Venue> VenuesDatabase = new ArrayList<>();
     RecyclerView recyclerView;
@@ -23,7 +23,7 @@ public class ActivitiesFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
-    public ActivitiesFragment() {
+    public FeaturedFragment() {
         // Required empty public constructor
     }
 
@@ -34,7 +34,6 @@ public class ActivitiesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.venue_list, container, false);
 
         //Create the ArrayList data
-
         VenuesDatabase.add(new Venue(
                 getString(R.string.venue_5_title),
                 getString(R.string.venue_5_intro),
@@ -45,17 +44,6 @@ public class ActivitiesFragment extends Fragment {
                 getString(R.string.venue_5_features_services),
                 getString(R.string.venue_5_map_url),
                 R.drawable.venue_5));
-
-        VenuesDatabase.add(new Venue(
-                getString(R.string.venue_1_title),
-                getString(R.string.venue_1_intro),
-                getString(R.string.venue_1_village),
-                getString(R.string.venue_1_volcano),
-                getString(R.string.venue_1_website_url),
-                getString(R.string.venue_1_phone_number),
-                getString(R.string.venue_1_features_services),
-                getString(R.string.venue_1_map_url),
-                R.drawable.venue_1));
 
         VenuesDatabase.add(new Venue(
                 getString(R.string.venue_0_title),
@@ -69,37 +57,37 @@ public class ActivitiesFragment extends Fragment {
                 R.drawable.venue_0));
 
         VenuesDatabase.add(new Venue(
-                getString(R.string.venue_2_title),
-                getString(R.string.venue_2_intro),
-                getString(R.string.venue_2_village),
-                getString(R.string.venue_2_volcano),
-                getString(R.string.venue_2_website_url),
-                getString(R.string.venue_2_phone_number),
-                getString(R.string.venue_2_features_services),
-                getString(R.string.venue_2_map_url),
-                R.drawable.venue_2));
+                getString(R.string.venue_6_title),
+                getString(R.string.venue_6_intro),
+                getString(R.string.venue_6_village),
+                getString(R.string.venue_6_volcano),
+                getString(R.string.venue_6_website_url),
+                getString(R.string.venue_6_phone_number),
+                getString(R.string.venue_6_features_services),
+                getString(R.string.venue_6_map_url),
+                R.drawable.venue_6));
 
         VenuesDatabase.add(new Venue(
-                getString(R.string.venue_3_title),
-                getString(R.string.venue_3_intro),
-                getString(R.string.venue_3_village),
-                getString(R.string.venue_3_volcano),
-                getString(R.string.venue_3_website_url),
-                getString(R.string.venue_3_phone_number),
-                getString(R.string.venue_3_features_services),
-                getString(R.string.venue_3_map_url),
-                R.drawable.venue_3));
+                getString(R.string.venue_9_title),
+                getString(R.string.venue_9_intro),
+                getString(R.string.venue_9_village),
+                getString(R.string.venue_9_volcano),
+                getString(R.string.venue_9_website_url),
+                getString(R.string.venue_9_phone_number),
+                getString(R.string.venue_9_features_services),
+                getString(R.string.venue_9_map_url),
+                R.drawable.venue_9));
 
         VenuesDatabase.add(new Venue(
-                getString(R.string.venue_4_title),
-                getString(R.string.venue_4_intro),
-                getString(R.string.venue_4_village),
-                getString(R.string.venue_4_volcano),
-                getString(R.string.venue_4_website_url),
-                getString(R.string.venue_4_phone_number),
-                getString(R.string.venue_4_features_services),
-                getString(R.string.venue_4_map_url),
-                R.drawable.venue_4));
+                getString(R.string.venue_14_title),
+                getString(R.string.venue_14_intro),
+                getString(R.string.venue_14_village),
+                getString(R.string.venue_14_volcano),
+                getString(R.string.venue_14_website_url),
+                getString(R.string.venue_14_phone_number),
+                getString(R.string.venue_14_features_services),
+                getString(R.string.venue_14_map_url),
+                R.drawable.venue_14));
 
         //Create a standard LinearLayout Manager to control how the recycler works
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
