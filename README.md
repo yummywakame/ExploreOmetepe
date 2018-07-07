@@ -2,8 +2,8 @@
 # Explore Ometepe - Tourism App
 
 ## Note for Reviewer
-In case of any import issues I have a backup of the project zipped here: 
-https://www.dropbox.com/s/zj21xq4p8gqjotn/ExploreOmetepe.zip?dl=0
+<!--In case of any import issues I have a backup of the project zipped here: 
+https://www.dropbox.com/s/zj21xq4p8gqjotn/ExploreOmetepe.zip?dl=0-->
 
 *Tested on my Samsung Galaxy S8, Pixel 2XL API 27 and and Nexus 5 API 27*
 
