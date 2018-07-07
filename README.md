@@ -5,7 +5,7 @@
 In case of any import issues I have a backup of the project zipped here: 
 https://www.dropbox.com/s/zj21xq4p8gqjotn/ExploreOmetepe.zip?dl=0
 
-Tested on my Samsung Galaxy S8 and Nexus 5 *API 27*
+*Tested on my Samsung Galaxy S8, Pixel 2XL API 27 and and Nexus 5 API 27*
 
 ## Resources
  - [Lift on Touch animation for CardViews](https://stackoverflow.com/questions/44393762/cardview-lift-on-touch)
