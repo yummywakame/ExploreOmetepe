@@ -17,8 +17,6 @@
 package com.yummywakame.exploreometepe;
 
 import android.content.Intent;
-import android.content.res.Resources;
-import android.media.Image;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
