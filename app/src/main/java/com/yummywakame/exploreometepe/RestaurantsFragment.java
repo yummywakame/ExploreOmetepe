@@ -1,5 +1,6 @@
 package com.yummywakame.exploreometepe;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,6 +19,8 @@ public class RestaurantsFragment extends Fragment {
     public ArrayList<Venue> VenuesDatabase = new ArrayList<>();
     RecyclerView recyclerView;
 
+    private Context mContext;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +28,12 @@ public class RestaurantsFragment extends Fragment {
 
     public RestaurantsFragment() {
         // Required empty public constructor
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mContext = context;
     }
 
     @Override
@@ -103,7 +112,7 @@ public class RestaurantsFragment extends Fragment {
         //Create a standard LinearLayout Manager to control how the recycler works
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         //Create an adapter based on the custom class you created
-        VenueAdapter venueAdapter = new VenueAdapter(getContext(),VenuesDatabase);
+        VenueAdapter venueAdapter = new VenueAdapter(mContext,VenuesDatabase);
 
         //Find your Recycler and set your layoutManger and adapter to it
         recyclerView = rootView.findViewById(R.id.recycler_view);

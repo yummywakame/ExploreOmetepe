@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder> {
     private LayoutInflater layoutInflater;
     private ArrayList<Venue> VenuesDatabase;
-    private Context mContext;
+
 
     //Creates the actual method of performing the recycler
     public VenueAdapter(Context context, ArrayList<Venue> VenuesDatabase) {
