@@ -3,65 +3,62 @@ package com.yummywakame.exploreometepe;
 public class Venue {
 
     // Venue items
-    private String VenueTitle;
-    private String VenueIntro;
-    private String VenueVillage;
-    private String VenueVolcano;
-    private String VenueWebsite;
-    private String VenuePhone;
-    private String VenueFeatures;
-    private String VenueMapUrl;
-    private int VenuePhotoId;
+    private String mTitle;
+    private String mIntro;
+    private String mVillage;
+    private String mVolcano;
+    private String mWebsite;
+    private String mPhone;
+    private String mFeatures;
+    private String mMapUrl;
+    private int mPhotoId;
 
-
-    public Venue(String VenueTitle,
-                 String VenueIntro,
-                 String VenueVillage,
-                 String VenueVolcano,
-                 String VenueWebsite,
-                 String VenuePhone,
-                 String VenueFeatures,
-                 String VenueMapUrl,
-                 int VenuePhotoId){
-        this.VenueTitle = VenueTitle;
-        this.VenueIntro = VenueIntro;
-        this.VenueVillage = VenueVillage;
-        this.VenueVolcano = VenueVolcano;
-        this.VenueWebsite = VenueWebsite;
-        this.VenuePhone = VenuePhone;
-        this.VenueFeatures = VenueFeatures;
-        this.VenueMapUrl = VenueMapUrl;
-        this.VenuePhotoId = VenuePhotoId;
-
+    public Venue(String mTitle,
+                 String mIntro,
+                 String mVillage,
+                 String mVolcano,
+                 String mWebsite,
+                 String mPhone,
+                 String mFeatures,
+                 String mMapUrl,
+                 int mPhotoId){
+        this.mTitle = mTitle;
+        this.mIntro = mIntro;
+        this.mVillage = mVillage;
+        this.mVolcano = mVolcano;
+        this.mWebsite = mWebsite;
+        this.mPhone = mPhone;
+        this.mFeatures = mFeatures;
+        this.mMapUrl = mMapUrl;
+        this.mPhotoId = mPhotoId;
     }
 
     //These are your GETTERS to return the selected items
     public String getVenueTitle() {
-        return VenueTitle;
+        return mTitle;
     }
     public String getVenueIntro() {
-        return VenueIntro;
+        return mIntro;
     }
     public String getVenueVillage() {
-        return VenueVillage;
+        return mVillage;
     }
     public String getVenueVolcano() {
-        return VenueVolcano;
+        return mVolcano;
     }
     public String getVenueWebsite() {
-        return VenueWebsite;
+        return mWebsite;
     }
     public String getVenuePhone() {
-        return VenuePhone;
+        return mPhone;
     }
     public String getVenueFeatures() {
-        return VenueFeatures;
+        return mFeatures;
     }
     public String getVenueMapUrl() {
-        return VenueMapUrl;
+        return mMapUrl;
     }
     public int getVenuePhotoId() {
-        return VenuePhotoId;
+        return mPhotoId;
     }
-
 }

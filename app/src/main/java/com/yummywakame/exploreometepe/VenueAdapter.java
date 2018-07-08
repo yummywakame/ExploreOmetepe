@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder> {
     private LayoutInflater layoutInflater;
     private ArrayList<Venue> VenuesDatabase;
+    private Context mContext;
 
     //Creates the actual method of performing the recycler
     public VenueAdapter(Context context, ArrayList<Venue> VenuesDatabase) {
@@ -45,7 +46,7 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
             public void onClick(View v) {
                 Intent venueDetailsIntent = new Intent(v.getContext(), DetailActivity.class);
 
-                // Add the venue details variables to be sent to venueDetailsActivity
+                // Add the venue details BUNDLE to be sent to DetailActivity
                 venueDetailsIntent.putExtra("VENUE_TITLE", currentVenue.getVenueTitle());
                 venueDetailsIntent.putExtra("VENUE_INTRO", currentVenue.getVenueIntro());
                 venueDetailsIntent.putExtra("VENUE_VILLAGE", currentVenue.getVenueVillage());
@@ -78,7 +79,5 @@ public class VenueAdapter extends RecyclerView.Adapter<VenueAdapter.VenueHolder>
             venueVillage = venueView.findViewById(R.id.venue_village);
             venuePhotoId = venueView.findViewById(R.id.venue_photo);
         }
-
     }
-
 }

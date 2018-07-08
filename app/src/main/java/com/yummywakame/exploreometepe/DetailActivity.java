@@ -48,7 +48,7 @@ public class DetailActivity extends AppCompatActivity {
         ImageView selectedVenueImageView = findViewById(R.id.backdrop);
         ImageView selectedVenueMapImageView = findViewById(R.id.venue_map);
 
-        // Set the TextViews to the values for the selected Venue
+        // Set the TextViews to the BUNDLE values for the selected Venue
         if (TextUtils.isEmpty(selectedVenueDetails.getStringExtra("VENUE_TITLE"))
                 || selectedVenueDetails.getStringExtra("VENUE_TITLE").equals("N/A")) {
             selectedVenueTitleTextView.setVisibility(View.GONE);
@@ -105,9 +105,9 @@ public class DetailActivity extends AppCompatActivity {
         } else {
             String mapUrl = selectedVenueDetails.getStringExtra("VENUE_MAP_URL");
         }
+
         // Display the venue image
         selectedVenueImageView.setImageResource(selectedVenueDetails.getIntExtra("VENUE_IMAGE",0));
-
 
         // Set up the custom toolbar and back button
         Toolbar toolbar = findViewById(R.id.main_toolbar);
@@ -159,7 +159,6 @@ public class DetailActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
 
     // Make the Up Button behave like a Back Button
@@ -172,5 +171,4 @@ public class DetailActivity extends AppCompatActivity {
         }
         return(super.onOptionsItemSelected(item));
     }
-
 }

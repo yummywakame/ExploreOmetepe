@@ -37,6 +37,5 @@ public class MainActivity extends AppCompatActivity {
             tabLayout.getTabAt(2).setIcon(R.drawable.tab_icon_accommodation);
             tabLayout.getTabAt(3).setIcon(R.drawable.tab_icon_featured);
         }
-
     }
 }
