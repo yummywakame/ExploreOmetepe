@@ -1,11 +1,22 @@
 ## Grow With Google Android Basics Nanodegree: PROJECT 5
 # Explore Ometepe - Tourism App
 
-## Note for Reviewer
-<!--In case of any import issues I have a backup of the project zipped here: 
-https://www.dropbox.com/s/zj21xq4p8gqjotn/ExploreOmetepe.zip?dl=0-->
+Used **API 27: Android 8.1 (Oreo)**
 
-*Tested on my Samsung Galaxy S8, Pixel 2XL API 27 and and Nexus 5 API 27*
+## Walkthrough
+<a href="https://www.youtube.com/watch?v=L3YRb_MxeQ8
+" target="_blank"><img src="./maxresdefault.jpg" 
+alt="Explore Ometepe App Demo" width="740" height="416" border="10" /></a>
+
+## Screenshots
+![Quiz Section](./screenshots.jpg)
+
+## Additional Features
+1. ListView replaced with RecyclerView
+2. Contractable layout based on CheeseSquare
+3. CardViews based on Material Design
+4. Lift on Touch animation onClick for CardViews
+5. Transparent toolbar
 
 ## Resources
  - [Lift on Touch animation for CardViews](https://stackoverflow.com/questions/44393762/cardview-lift-on-touch)
