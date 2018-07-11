@@ -18,6 +18,7 @@ package com.yummywakame.exploreometepe;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.support.annotation.IntegerRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -34,8 +35,16 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        // Get the intent that was used to start this activity
-        final Intent selectedVenueDetails = getIntent();
+        // Venue details BUNDLE from MainActivity
+        final String venueTitle = getIntent().getStringExtra("VENUE_TITLE");
+        final String venueIntro = getIntent().getStringExtra("VENUE_INTRO");
+        final String venueVillage = getIntent().getStringExtra("VENUE_VILLAGE");
+        final String venueVolcano = getIntent().getStringExtra("VENUE_VOLCANO");
+        final String venueWebsite = getIntent().getStringExtra("VENUE_WEBSITE");
+        final String venuePhone = getIntent().getStringExtra("VENUE_PHONE");
+        final String venueFeatures = getIntent().getStringExtra("VENUE_FEATURES");
+        final int venueImage = getIntent().getIntExtra("VENUE_IMAGE",0);
+        final String venueMapUrl = getIntent().getStringExtra("VENUE_MAP_URL");
 
         // Find the views for selected Venue
         TextView selectedVenueTitleTextView = findViewById(R.id.toolbar_title);
@@ -49,65 +58,55 @@ public class DetailActivity extends AppCompatActivity {
         ImageView selectedVenueMapImageView = findViewById(R.id.venue_map);
 
         // Set the TextViews to the BUNDLE values for the selected Venue
-        if (TextUtils.isEmpty(selectedVenueDetails.getStringExtra("VENUE_TITLE"))
-                || selectedVenueDetails.getStringExtra("VENUE_TITLE").equals("N/A")) {
+        if (venueTitle.equals("") || venueTitle.equals("N/A")) {
             selectedVenueTitleTextView.setVisibility(View.GONE);
         } else {
-            selectedVenueTitleTextView.setText(selectedVenueDetails.getStringExtra("VENUE_TITLE"));
+            selectedVenueTitleTextView.setText(venueTitle);
         }
 
-        if (TextUtils.isEmpty(selectedVenueDetails.getStringExtra("VENUE_INTRO"))
-                || selectedVenueDetails.getStringExtra("VENUE_INTRO").equals("N/A")) {
+        if (venueIntro.equals("") || venueIntro.equals("N/A")) {
             selectedVenueIntroTextView.setVisibility(View.GONE);
         } else {
-            selectedVenueIntroTextView.setText(selectedVenueDetails.getStringExtra("VENUE_INTRO"));
+            selectedVenueIntroTextView.setText(venueIntro);
         }
 
-        if (TextUtils.isEmpty(selectedVenueDetails.getStringExtra("VENUE_VILLAGE"))
-                || selectedVenueDetails.getStringExtra("VENUE_VILLAGE").equals("N/A")) {
+        if (venueVillage.equals("") || venueVillage.equals("N/A")) {
             selectedVenueVillageTextView.setVisibility(View.GONE);
         } else {
-            selectedVenueVillageTextView.setText(selectedVenueDetails.getStringExtra("VENUE_VILLAGE"));
+            selectedVenueVillageTextView.setText(venueVillage);
         }
 
-        if (TextUtils.isEmpty(selectedVenueDetails.getStringExtra("VENUE_VOLCANO"))
-                || selectedVenueDetails.getStringExtra("VENUE_VOLCANO").equals("N/A")) {
+        if (venueVolcano.equals("") || venueVolcano.equals("N/A")) {
             selectedVenueVolcanoTextView.setVisibility(View.GONE);
         } else {
-            selectedVenueVolcanoTextView.setText(selectedVenueDetails.getStringExtra("VENUE_VOLCANO"));
+            selectedVenueVolcanoTextView.setText(venueVolcano);
         }
 
-        if (TextUtils.isEmpty(selectedVenueDetails.getStringExtra("VENUE_WEBSITE"))
-                || selectedVenueDetails.getStringExtra("VENUE_WEBSITE").equals("N/A")) {
+        if (venueWebsite.equals("") || venueWebsite.equals("N/A")) {
             selectedVenueWebsiteTextView.setVisibility(View.GONE);
         } else {
-            selectedVenueWebsiteTextView.setText(selectedVenueDetails.getStringExtra("VENUE_WEBSITE"));
+            selectedVenueWebsiteTextView.setText(venueWebsite);
         }
 
-        if (TextUtils.isEmpty(selectedVenueDetails.getStringExtra("VENUE_PHONE"))
-                || selectedVenueDetails.getStringExtra("VENUE_PHONE").equals("N/A")) {
+        if (venuePhone.equals("") || venuePhone.equals("N/A")) {
             selectedVenuePhoneTextView.setVisibility(View.GONE);
         } else {
-            selectedVenuePhoneTextView.setText(selectedVenueDetails.getStringExtra("VENUE_PHONE"));
+            selectedVenuePhoneTextView.setText(venuePhone);
         }
 
-        if (TextUtils.isEmpty(selectedVenueDetails.getStringExtra("VENUE_FEATURES"))
-                || selectedVenueDetails.getStringExtra("VENUE_FEATURES").equals("N/A")) {
+        if (venueFeatures.equals("") || venueFeatures.equals("N/A")) {
             selectedVenueFeaturesTextView.setVisibility(View.GONE);
         } else {
-            selectedVenueFeaturesTextView.setText(selectedVenueDetails.getStringExtra("VENUE_FEATURES"));
+            selectedVenueFeaturesTextView.setText(venueFeatures);
         }
 
         // Check if there is a url and display the map locator button if there is
-        if (TextUtils.isEmpty(selectedVenueDetails.getStringExtra("VENUE_MAP_URL"))
-                || selectedVenueDetails.getStringExtra("VENUE_MAP_URL").equals("N/A")) {
+        if (venueMapUrl.equals("") || venueMapUrl.equals("N/A")) {
             selectedVenueMapImageView.setVisibility(View.GONE);
-        } else {
-            String mapUrl = selectedVenueDetails.getStringExtra("VENUE_MAP_URL");
         }
 
         // Display the venue image
-        selectedVenueImageView.setImageResource(selectedVenueDetails.getIntExtra("VENUE_IMAGE",0));
+        selectedVenueImageView.setImageResource(venueImage);
 
         // Set up the custom toolbar and back button
         Toolbar toolbar = findViewById(R.id.main_toolbar);
@@ -123,7 +122,7 @@ public class DetailActivity extends AppCompatActivity {
         findViewById(R.id.venue_website).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = selectedVenueDetails.getStringExtra("VENUE_WEBSITE");
+                String url = venueWebsite;
 
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));
@@ -137,7 +136,7 @@ public class DetailActivity extends AppCompatActivity {
         findViewById(R.id.venue_phone).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String phoneNumber = selectedVenueDetails.getStringExtra("VENUE_PHONE");
+                String phoneNumber = venuePhone;
 
                 Intent intent = new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:" + phoneNumber));
@@ -151,7 +150,7 @@ public class DetailActivity extends AppCompatActivity {
         findViewById(R.id.venue_map).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri mapUri = Uri.parse(selectedVenueDetails.getStringExtra("VENUE_MAP_URL"));
+                Uri mapUri = Uri.parse(venueMapUrl);
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, mapUri);
                 if (intent.resolveActivity(getPackageManager()) != null) {
